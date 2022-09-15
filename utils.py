@@ -26,14 +26,14 @@ def count_sort_n_tokens(tokens, n=30):
     return Counter(tokens).most_common(n)
 
 
-def normalizar_candidato_felipe_avila(text):
+def normalize_candidate_felipe_avila(text):
     escrita_equivocada = r'Felipe D’Ávila|Felipe d’Ávila'
     escrita_padrao = 'Felipe D’Avila'
     regex = escrita_equivocada
     return re.sub(regex, escrita_padrao, text)
 
 
-def normalizar_candidato_lula(text):
+def normalize_candidate_lula(text):
     escrita_equivocada = r'Luiz Inácio Lula da Silva'
     escrita_padrao = 'Lula'
     regex = escrita_equivocada
